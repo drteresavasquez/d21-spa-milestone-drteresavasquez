@@ -1,9 +1,8 @@
-.container{
-	 margin: 0 auto;
-	width: 100%;
-	display: flex;
-	padding-top: 30px; 
 
+#cars{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 30px; 
 }
 
 .card-img-top{
@@ -12,6 +11,21 @@
 	height:auto;
 }
 
-.card{
-	margin-top: 20px;
+.col-12, .col-sm-4{
+	padding: 0px;
+}
+
+.cardHeader{
+	width: 100%;
+	border-bottom: 1px solid black;
+	
+}
+
+.myCard{
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 0px;
+	border-radius: 10px;
+	margin: 10px;
+       
 }
