@@ -2,7 +2,6 @@ console.log("main.js, YO!");
 
 {
 
-
 	Carlot.showCarData = (cars, item) => {
 	let carsDiv = document.getElementById("cars");
 	cars = Object.keys(carListings.cars);
@@ -22,7 +21,7 @@ console.log("main.js, YO!");
 				});	
 
 	carContainer = document.getElementsByClassName("myCard");
-	test(carContainer);
+	Carlot.waitForJSON(carContainer);
 
 	};
 
@@ -30,12 +29,11 @@ console.log("main.js, YO!");
 	let textInput = document.getElementById("textInput");
 
 
-	function test(input){
+	Carlot.waitForJSON = (input) => {
 		for (var i = 0 ; i < input.length; i++){
-		input[i].addEventListener("click", () => {
+			input[i].addEventListener("click", () => {
 			textInput.value = "";
 			carId = event.currentTarget.id;
-			console.log("carId", carId);
 			let getWhole = document.getElementById(carId);
 			getWhole.classList.toggle("border");
 			textInput.focus();
@@ -51,37 +49,6 @@ console.log("main.js, YO!");
 		
 	});
 };
-
-	
-
-
-		// console.log("carContainer", carContainer);
-
-
-	// for (var i = 0; i < carContainer.length; i++) {
-
- //  	carContainer[i].addEventListener("click", function (event) {
- //  			carId = event.currentTarget.id;
- //  			console.log("carId", carId);
- //  //   	let getWhole = document.getElementById(carId);
-	// 	// getWhole.classList.toggle("border");
-	// 	// textInput.focus();
- //  	})
-
-	// for (var i = 0; i < thisCard.length; i++){
-	// 		console.log("thisCard", thisCard[i]);
-
-					// thisCard.addEventListener("click", () => {
-					// let textInput = document.getElementById("textInput");
-					// cardId = event.target.id;
-					// let getWhole = document.getElementById(cardId);
-					// getWhole.classList.toggle("border");
-
-					// textInput.focus();
-
-					// });
-				// };
-
 
 
 }(Carlot || {});
