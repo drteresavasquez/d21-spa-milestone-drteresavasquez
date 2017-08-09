@@ -1,1 +1,0 @@
-console.log("cars images.js, YO!")

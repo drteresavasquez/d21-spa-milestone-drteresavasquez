@@ -1,4 +1,16 @@
 
+.navbar{
+	position: fixed !important; 
+	width: 100%;
+	margin-bottom: 30px;
+	z-index: 10;
+	margin-top: -80px;
+}
+
+.container{
+	margin-top: 80px;
+}
+
 #cars{
 	width: 100%;
 	margin: 0 auto;
@@ -18,14 +30,24 @@
 .cardHeader{
 	width: 100%;
 	border-bottom: 1px solid black;
+
 	
 }
 
 .myCard{
 	margin: 0 auto;
-	border: 1px solid black;
 	padding: 0px;
-	border-radius: 10px;
 	margin: 10px;
+	border: 5px solid black;
+	border-radius: 10px;
+	background: pink;
        
+}
+
+.border{
+	border-radius: 10px;
+		border: 1px solid black;
+		background: white;
+
+	
 }
